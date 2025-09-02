@@ -92,7 +92,6 @@ export type PlasmicHomepage__OverridesType = {
   curriculum?: Flex__<"section">;
   link?: Flex__<"a"> & Partial<LinkProps>;
   meetings?: Flex__<"section">;
-  about?: Flex__<"section">;
   contactSection?: Flex__<typeof ContactSection>;
   footer?: Flex__<typeof Footer>;
 };
@@ -138,7 +137,6 @@ function PlasmicHomepage__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
 
   return (
@@ -1136,159 +1134,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </section>
-          <section
-            data-plasmic-name={"about"}
-            data-plasmic-override={overrides.about}
-            className={classNames(projectcss.all, sty.about)}
-            id={"about"}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox__tdrV)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__w9W7G
-                )}
-                id={"about"}
-              >
-                {"CONTACT"}
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__tminf)}>
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__vt4FV
-                )}
-              >
-                {"Ready to join us? "}
-              </h2>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__nCCuP
-                )}
-              >
-                {
-                  "Please send us a note at lthsmathclub@gmail.com or show up at one of our sessions."
-                }
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__m3Mbx)}>
-              <div className={classNames(projectcss.all, sty.freeBox__dWqto)}>
-                <div className={classNames(projectcss.all, sty.freeBox__sl4Qh)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__izjoY)}
-                    displayHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "311px"
-                        : "312px"
-                    }
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "100%"
-                        : "100%"
-                    }
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "100%"
-                        : "100%"
-                    }
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/beginners_guide_website_in_3_minutes/images/studentGa473640711280Jpg.jpg",
-                      fullWidth: 1280,
-                      fullHeight: 853,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__atrKw)}
-                    displayHeight={"312px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "100%"
-                        : "100%"
-                    }
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/beginners_guide_website_in_3_minutes/images/lukePetersB6JiNerWMz0UnsplashJpg.jpg",
-                      fullWidth: 1920,
-                      fullHeight: 1280,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__nDuic)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__efzMw)}
-                  displayHeight={"100%"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "100%"
-                  }
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "100%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/beginners_guide_website_in_3_minutes/images/benKoldeBs2Ba7T69MMUnsplashJpg.jpg",
-                    fullWidth: 1920,
-                    fullHeight: 2449,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__vAaDg)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img___4A7TT)}
-                  displayHeight={"100%"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "100%"
-                  }
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "100%"
-                      : "100%"
-                  }
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/beginners_guide_website_in_3_minutes/images/danielKorpaiAUmq852V7IUnsplashJpg.jpg",
-                    fullWidth: 1920,
-                    fullHeight: 2400,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-            </div>
-          </section>
           <ContactSection
             data-plasmic-name={"contactSection"}
             data-plasmic-override={overrides.contactSection}
@@ -1316,7 +1161,6 @@ const PlasmicDescendants = {
     "curriculum",
     "link",
     "meetings",
-    "about",
     "contactSection",
     "footer"
   ],
@@ -1327,7 +1171,6 @@ const PlasmicDescendants = {
   curriculum: ["curriculum", "link"],
   link: ["link"],
   meetings: ["meetings"],
-  about: ["about"],
   contactSection: ["contactSection"],
   footer: ["footer"]
 } as const;
@@ -1343,7 +1186,6 @@ type NodeDefaultElementType = {
   curriculum: "section";
   link: "a";
   meetings: "section";
-  about: "section";
   contactSection: typeof ContactSection;
   footer: typeof Footer;
 };
@@ -1415,7 +1257,6 @@ export const PlasmicHomepage = Object.assign(
     curriculum: makeNodeComponent("curriculum"),
     link: makeNodeComponent("link"),
     meetings: makeNodeComponent("meetings"),
-    about: makeNodeComponent("about"),
     contactSection: makeNodeComponent("contactSection"),
     footer: makeNodeComponent("footer"),
 
