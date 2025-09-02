@@ -179,7 +179,7 @@ function PlasmicFooter__RenderFunc(props: {
             href={"/#services"}
             platform={"nextjs"}
           >
-            {"Services"}
+            {"Curriculum"}
           </PlasmicLink__>
           <PlasmicLink__
             className={classNames(
@@ -192,20 +192,7 @@ function PlasmicFooter__RenderFunc(props: {
             href={"/#work"}
             platform={"nextjs"}
           >
-            {"Work"}
-          </PlasmicLink__>
-          <PlasmicLink__
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__nKaMq
-            )}
-            component={Link}
-            href={"/#about"}
-            platform={"nextjs"}
-          >
-            {"About"}
+            {"Meetings"}
           </PlasmicLink__>
           <PlasmicLink__
             className={classNames(
@@ -364,7 +351,7 @@ function PlasmicFooter__RenderFunc(props: {
                   sty.text___4Vy8K
                 )}
               >
-                {"anna@design.com"}
+                {"lthsmathclub@gmail.com"}
               </div>
             </div>
           </div>

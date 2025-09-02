@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -72,7 +72,7 @@
     {
       "projectId": "g859oFSV3DRmGwpuroRhgj",
       "projectApiToken": "0kZqXpJTJfHZmMxZwUDkv9DKFPpW2GddEs6G0fQCs2HoRJtHBToDB422UoWj9DUrHIXHyUFOXauFKeBtyc3w",
-      "projectName": "Beginner's guide: website in 3 minutes",
+      "projectName": "The LTHS Math Club",
       "version": "latest",
       "cssFilePath": "plasmic/beginners_guide_website_in_3_minutes/plasmic.module.css",
       "components": [
@@ -484,6 +484,11 @@
           "id": "YRi4jvefzQq6",
           "name": "abstract-background-.jpg",
           "filePath": "../public/plasmic/beginners_guide_website_in_3_minutes/images/abstractBackgroundJpg.jpg"
+        },
+        {
+          "id": "ysexWigveCQ2",
+          "name": "LakeTravisDistrictlogo.png",
+          "filePath": "../public/plasmic/the_lths_math_club/images/lakeTravisDistrictlogoPng.webp"
         }
       ],
       "indirect": false,

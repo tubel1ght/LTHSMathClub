@@ -126,6 +126,7 @@ function PlasmicNavigationBar__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
   const styleTokensClassNames = _useStyleTokens();
 
   return (
@@ -135,19 +136,23 @@ function PlasmicNavigationBar__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       brand={
-        <PlasmicLink__
-          className={classNames(
-            projectcss.all,
-            projectcss.a,
-            projectcss.__wab_text,
-            sty.link__ttVnl
-          )}
-          component={Link}
-          href={`/`}
-          platform={"nextjs"}
-        >
-          {"Anna.Design"}
-        </PlasmicLink__>
+        <PlasmicImg__
+          alt={""}
+          className={classNames(sty.img__aZtiM)}
+          displayHeight={"auto"}
+          displayMaxHeight={"none"}
+          displayMaxWidth={"20%"}
+          displayMinHeight={"0"}
+          displayMinWidth={"0"}
+          displayWidth={"auto"}
+          loading={"lazy"}
+          src={{
+            src: "/plasmic/the_lths_math_club/images/lakeTravisDistrictlogoPng.webp",
+            fullWidth: 512,
+            fullHeight: 493,
+            aspectRatio: undefined
+          }}
+        />
       }
       className={classNames(
         "__wab_instance",
@@ -185,7 +190,29 @@ function PlasmicNavigationBar__RenderFunc(props: {
             platform={"nextjs"}
             role={"menuitem"}
           >
-            {"Services"}
+            <React.Fragment>
+              <React.Fragment>{""}</React.Fragment>
+              {
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___61Dyr
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
+                    >
+                      {"Curriculum"}
+                    </span>
+                  </React.Fragment>
+                </h3>
+              }
+              <React.Fragment>{""}</React.Fragment>
+            </React.Fragment>
           </PlasmicLink__>
           <PlasmicLink__
             className={classNames(
@@ -199,21 +226,29 @@ function PlasmicNavigationBar__RenderFunc(props: {
             platform={"nextjs"}
             role={"menuitem"}
           >
-            {"Work"}
-          </PlasmicLink__>
-          <PlasmicLink__
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__ikIoX
-            )}
-            component={Link}
-            href={"/#about"}
-            platform={"nextjs"}
-            role={"menuitem"}
-          >
-            {"About"}
+            <React.Fragment>
+              <React.Fragment>{""}</React.Fragment>
+              {
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3___6RBaX
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
+                    >
+                      {"Meetings"}
+                    </span>
+                  </React.Fragment>
+                </h3>
+              }
+              <React.Fragment>{""}</React.Fragment>
+            </React.Fragment>
           </PlasmicLink__>
           <PlasmicLink__
             className={classNames(
@@ -227,7 +262,29 @@ function PlasmicNavigationBar__RenderFunc(props: {
             platform={"nextjs"}
             role={"menuitem"}
           >
-            {"Contact"}
+            <React.Fragment>
+              <React.Fragment>{""}</React.Fragment>
+              {
+                <h3
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h3,
+                    projectcss.__wab_text,
+                    sty.h3__hqGcq
+                  )}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#FFFFFF" }}
+                    >
+                      {"Contact"}
+                    </span>
+                  </React.Fragment>
+                </h3>
+              }
+              <React.Fragment>{""}</React.Fragment>
+            </React.Fragment>
           </PlasmicLink__>
         </React.Fragment>
       }
@@ -235,12 +292,16 @@ function PlasmicNavigationBar__RenderFunc(props: {
         <PlasmicImg__
           alt={""}
           className={classNames(sty.img__sHjaw)}
-          displayHeight={"auto"}
+          displayHeight={
+            hasVariant(globalVariants, "screen", "mobileOnly") ? "auto" : "auto"
+          }
           displayMaxHeight={"none"}
           displayMaxWidth={"none"}
           displayMinHeight={"0"}
           displayMinWidth={"0"}
-          displayWidth={"auto"}
+          displayWidth={
+            hasVariant(globalVariants, "screen", "mobileOnly") ? "89px" : "auto"
+          }
           src={"https://static1.plasmic.app/menu.svg"}
         />
       }

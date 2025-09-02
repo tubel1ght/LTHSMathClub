@@ -72,9 +72,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: g859oFSV3DRmGwpuroRhgj/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: 2G_Uke7bZMHO/css
 
-import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: grGSG0Zm60P-/icon
-import StarIcon from "./icons/PlasmicIcon__Star"; // plasmic-import: kLvQ-1Kz66XR/icon
-
 createPlasmicElementProxy;
 
 export type PlasmicHomepage__VariantMembers = {};
@@ -89,14 +86,13 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   navigationBar?: Flex__<typeof NavigationBar>;
-  intro?: Flex__<"section">;
+  introduction?: Flex__<"section">;
   mainTextContainer?: Flex__<"div">;
   h1?: Flex__<"h1">;
+  curriculum?: Flex__<"section">;
   link?: Flex__<"a"> & Partial<LinkProps>;
-  services?: Flex__<"section">;
-  work?: Flex__<"section">;
+  meetings?: Flex__<"section">;
   about?: Flex__<"section">;
-  testimonials?: Flex__<"section">;
   contactSection?: Flex__<typeof ContactSection>;
   footer?: Flex__<typeof Footer>;
 };
@@ -205,9 +201,9 @@ function PlasmicHomepage__RenderFunc(props: {
           />
 
           <section
-            data-plasmic-name={"intro"}
-            data-plasmic-override={overrides.intro}
-            className={classNames(projectcss.all, sty.intro)}
+            data-plasmic-name={"introduction"}
+            data-plasmic-override={overrides.introduction}
+            className={classNames(projectcss.all, sty.introduction)}
           >
             <div className={classNames(projectcss.all, sty.freeBox__aIuQu)}>
               <div
@@ -234,7 +230,56 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__iuc84
                   )}
                 >
-                  {"Exploring math together"}
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <h2
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h2,
+                          projectcss.__wab_text,
+                          sty.h2___1J52C
+                        )}
+                      >
+                        {"Let's enjoy math, together!"}
+                      </h2>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
+                </div>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___3Ddva)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.columns__iGnWa)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column___8UqLn)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__heonx
+                        )}
+                      >
+                        {""}
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__pLzr8)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__k3860
+                        )}
+                      >
+                        {""}
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__llvHl)}>
                   <div
@@ -244,60 +289,188 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__uer3H
                     )}
                   >
-                    {"Enter some text"}
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fd2Hu
-                    )}
-                  >
-                    {"Enter some text"}
+                    <React.Fragment>
+                      <React.Fragment>{""}</React.Fragment>
+                      {
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__rxHYy
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{
+                                fontWeight: 100,
+                                color: "var(--token-24higxTT5khm)"
+                              }}
+                            >
+                              {"Motivation"}
+                            </span>
+                          </React.Fragment>
+                        </h2>
+                      }
+                      <React.Fragment>
+                        {
+                          "Mathematics is a journey through the beauty of patterns, relationships, symmetries and connections. Its seemingly vacuous abstractions are sometimes the most visceral and joyous way to partake in the language of reality of the universe around us. \n\n"
+                        }
+                      </React.Fragment>
+                      {
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__sQwo3
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{
+                                fontWeight: 100,
+                                color: "var(--token-24higxTT5khm)"
+                              }}
+                            >
+                              {"Purpose"}
+                            </span>
+                          </React.Fragment>
+                        </h2>
+                      }
+                      <React.Fragment>
+                        {
+                          "This club strives to be as oasis where we can all challenge ourselves to think slowly and clearly, in the security of each others company, unburdened by homework and exams, deadlines and projects. We will all learn together. \n\n"
+                        }
+                      </React.Fragment>
+                      {
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__kvRpk
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{
+                                fontWeight: 100,
+                                color: "var(--token-24higxTT5khm)"
+                              }}
+                            >
+                              {"Course"}
+                            </span>
+                          </React.Fragment>
+                        </h2>
+                      }
+                      <React.Fragment>
+                        {
+                          "In order to maximize the potential benefit to its members a thorough curriculum, inspired by the Art Of Problem Solving (Volumnes 1 and 2), will be used. This will provide a different outlook than traditional mathematics taught as part of the school curriculum. No textbook will be required to be bought by the members. Bringing some paper and pencils to work out ideas will be engouraged. \n\n"
+                        }
+                      </React.Fragment>
+                      {
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__l1Ncu
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{
+                                fontWeight: 100,
+                                color: "var(--token-24higxTT5khm)"
+                              }}
+                            >
+                              {"Decorum"}
+                            </span>
+                          </React.Fragment>
+                        </h2>
+                      }
+                      <React.Fragment>
+                        {
+                          "Communicating ideas to the group, enthusiastic problem solving, and gracious professionalism will be expected. The sessions might be challenging and sometimes the questions might be left unanswered (due to time or difficulty). Exposure, not mastery, might be what can reasonably be accompilished in the limited meeting times. \n\n"
+                        }
+                      </React.Fragment>
+                      {
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.__wab_text,
+                            sty.h2__pTbqr
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{
+                                fontWeight: 100,
+                                color: "var(--token-24higxTT5khm)"
+                              }}
+                            >
+                              {"Format"}
+                            </span>
+                          </React.Fragment>
+                        </h2>
+                      }
+                      <React.Fragment>
+                        {
+                          "Each meeting will, typically, cover a fresh topic. The first 20-25 minutes of the session will be a 4-6 question quiz to whet the appetite of the members for the topic under discussion. The next 30-40 minutes will involve going over some theory, followed by working on solving 2-3 problems in class, together.\n"
+                        }
+                      </React.Fragment>
+                    </React.Fragment>
                   </div>
                 </div>
               </div>
-              <PlasmicLink__
-                data-plasmic-name={"link"}
-                data-plasmic-override={overrides.link}
-                className={classNames(projectcss.all, projectcss.a, sty.link)}
-                component={Link}
-                href={"#about"}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__uAkc
-                  )}
-                >
-                  {"About me"}
-                </div>
-                <RightArrowIcon
-                  className={classNames(projectcss.all, sty.svg__yU86)}
-                  role={"img"}
-                />
-              </PlasmicLink__>
             </div>
           </section>
           <section
-            data-plasmic-name={"services"}
-            data-plasmic-override={overrides.services}
-            className={classNames(projectcss.all, sty.services)}
+            data-plasmic-name={"curriculum"}
+            data-plasmic-override={overrides.curriculum}
+            className={classNames(projectcss.all, sty.curriculum)}
             id={"Services"}
           >
             <div className={classNames(projectcss.all, sty.freeBox__a5Ds7)}>
-              <div
+              <PlasmicLink__
+                data-plasmic-name={"link"}
+                data-plasmic-override={overrides.link}
                 className={classNames(
                   projectcss.all,
+                  projectcss.a,
                   projectcss.__wab_text,
-                  sty.text__ip5
+                  sty.link
                 )}
+                component={Link}
                 id={"services"}
+                platform={"nextjs"}
               >
-                {"Services"}
-              </div>
+                <React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ color: "var(--token-24higxTT5khm)" }}
+                  >
+                    {"CURRICULUM"}
+                  </span>
+                </React.Fragment>
+              </PlasmicLink__>
               <h2
                 className={classNames(
                   projectcss.all,
@@ -306,7 +479,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__jPDix
                 )}
               >
-                {"Embracing constraints to push the boundaries."}
+                {"Outline of the topics to be covered"}
               </h2>
             </div>
             <div className={classNames(projectcss.all, sty.columns__oqlbq)}>
@@ -337,7 +510,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h3__sD413
                   )}
                 >
-                  {"UX/UI & Web \nDesign"}
+                  <React.Fragment>
+                    <React.Fragment>{"Weeks 1\u201312 \n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "var(--token-24higxTT5khm)" }}
+                    >
+                      {"AoPS Vol 1: Foundations"}
+                    </span>
+                  </React.Fragment>
                 </h3>
                 <div
                   className={classNames(
@@ -346,9 +527,164 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__h56Lr
                   )}
                 >
-                  {
-                    "Aut cupiditate expedita dolor eveniet a autem rerum ut dicta. Exercitationem eum suscipit quo. Est fugiat ducimus aut saepe."
-                  }
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <ol
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.ol,
+                          sty.ol__vN2Jq
+                        )}
+                      >
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__ueBQ
+                          )}
+                        >
+                          {
+                            "Introduction to Problem Solving Strategies (Pigeonhole, Working Backwards, Invariants) Quiz: Basic puzzle-style questions."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__b0Ujq
+                          )}
+                        >
+                          {
+                            "Arithmetic & Number Sense Tricks Quiz: Modular arithmetic with small mods"
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__ruQaz
+                          )}
+                        >
+                          {
+                            "Algebra I \u2013 Expressions & Equations Quiz: Simplify, solve linear equations, word problems."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__nuewb
+                          )}
+                        >
+                          {
+                            "Algebra II \u2013 Quadratics & Factoring Quiz: Factoring, roots, simple applications."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__oMzz3
+                          )}
+                        >
+                          {
+                            "Counting I \u2013 Basic Combinatorics Quiz: Permutations & combinations."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li___2BCmI
+                          )}
+                        >
+                          {
+                            "Counting II \u2013 Binomial Theorem & Advanced Counting Quiz: Choose problems, coefficient extraction."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__egZFk
+                          )}
+                        >
+                          {
+                            "Number Theory I \u2013 Divisibility & GCD/LCM Quiz: gcd, lcm, Euclidean algorithm, simple Diophantine equations."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__br1Eq
+                          )}
+                        >
+                          {
+                            "Number Theory II \u2013 Modular Arithmetic & Congruences Quiz: Solve modular congruences, Fermat\u2019s little theorem basics."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__kclD1
+                          )}
+                        >
+                          {
+                            "Geometry I \u2013 Triangles & Circles Basics Quiz: Angle chasing, Pythagorean triples."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__mqZzR
+                          )}
+                        >
+                          {
+                            "Geometry II \u2013 Coordinate Geometry Quiz: Midpoints, slopes, circle equations."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__mpXtw
+                          )}
+                        >
+                          {
+                            "Probability I \u2013 Intro to Probability Quiz: Coin flips, dice rolls."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__qLvvr
+                          )}
+                        >
+                          {
+                            "Probability II \u2013 Conditional Probability & Expected Value Quiz: Non-trivial counting probability, expected dice rolls."
+                          }
+                        </li>
+                      </ol>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__c4TQe)}>
@@ -378,7 +714,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h3__eX3Oh
                   )}
                 >
-                  {"Branding & visual \ndesign"}
+                  <React.Fragment>
+                    <React.Fragment>{"Weeks 13\u201322 \n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "var(--token-24higxTT5khm)" }}
+                    >
+                      {"Bridge Topics "}
+                    </span>
+                  </React.Fragment>
                 </h3>
                 <div
                   className={classNames(
@@ -387,9 +731,140 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__fGz1X
                   )}
                 >
-                  {
-                    "Aut cupiditate expedita dolor eveniet a autem rerum ut dicta. Exercitationem eum suscipit quo. Est fugiat ducimus aut saepe."
-                  }
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <ol
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.ol,
+                          sty.ol__siVs2
+                        )}
+                      >
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__jDQf
+                          )}
+                        >
+                          {
+                            "Inequalities I \u2013 AM\u2013GM & Cauchy-Schwarz basics \nQuiz: AM\u2013GM applications, basic inequalities."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__wHiE
+                          )}
+                        >
+                          {
+                            "Functions & Functional Equations (Intro)\nQuiz: f(x+1) = f(x) + \u2026 type."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__kWuZz
+                          )}
+                        >
+                          {
+                            "Polynomials I \u2013 Vieta\u2019s Formulas\nQuiz: Root-coefficient relationships."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__qmCi7
+                          )}
+                        >
+                          {
+                            "Polynomials II \u2013 Symmetric Polynomials & Roots of Unity \nQuiz: Classic polynomial identities."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__vmJg2
+                          )}
+                        >
+                          {
+                            "Geometry III \u2013 Similarity & Special Lines \nQuiz: Ceva/Menelaus warmup problems."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__qekwA
+                          )}
+                        >
+                          {
+                            "Geometry IV \u2013 Area & Length in Advanced Figures \nQuiz: Coordinate/geometry mix."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__q9VMf
+                          )}
+                        >
+                          {
+                            "Number Theory III \u2013 Euler\u2019s Totient & Advanced Congruences \nQuiz: \u03c6(n), modular inverses."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__eAdjp
+                          )}
+                        >
+                          {
+                            "Number Theory IV \u2013 Order, Primitive Roots \nQuiz: Small primitive roots & cycles."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__cG6Fz
+                          )}
+                        >
+                          {
+                            "Probability III \u2013 Advanced Probability & Expected Value \nQuiz: Conditional, multiple dice, nonuniform probability.\n"
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__eEnh4
+                          )}
+                        >
+                          {
+                            "Inequalities II \u2013 More Contest-Style Inequalities \nQuiz: Olympiad-level AM\u2013GM applications."
+                          }
+                        </li>
+                      </ol>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__crhGs)}>
@@ -419,7 +894,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h3__lcG7L
                   )}
                 >
-                  {"Web \ndevelopment"}
+                  <React.Fragment>
+                    <React.Fragment>{"Weeks 23\u201330\n"}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "var(--token-24higxTT5khm)" }}
+                    >
+                      {"AoPS Vol 2: Advanced"}
+                    </span>
+                  </React.Fragment>
                 </h3>
                 <div
                   className={classNames(
@@ -428,17 +911,124 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__falxu
                   )}
                 >
-                  {
-                    "Aut cupiditate expedita dolor eveniet a autem rerum ut dicta. Exercitationem eum suscipit quo. Est fugiat ducimus aut saepe."
-                  }
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <ol
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.ol,
+                          sty.ol__fhl80
+                        )}
+                      >
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__r51F3
+                          )}
+                        >
+                          {
+                            "Complex Numbers in Geometry \nQuiz: Represent points as complex numbers."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__y5TOi
+                          )}
+                        >
+                          {
+                            "Geometry V \u2013 Inversion & Transformations (Intro level) \nQuiz: Transform simple geometric figures."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__c1Ngu
+                          )}
+                        >
+                          {
+                            "Algebra III \u2013 Sequences & Series \nQuiz: Arithmetic/Geometric progressions."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li___8MLo9
+                          )}
+                        >
+                          {
+                            "Advanced Combinatorics \u2013 Stars and Bars, PIE \nQuiz: Distribution problems.\nF"
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__pe27H
+                          )}
+                        >
+                          {
+                            "Functional Equations II \u2013 Olympiad-Style \nQuiz: Harder f(x+y) = f(x) + f(y)."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__w5Er8
+                          )}
+                        >
+                          {
+                            "Mock Contest I \u2013 Mixed Topics \nQuiz: 6-problem mini-contest (easy to hard)."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__riMja
+                          )}
+                        >
+                          {
+                            "Mock Contest II + Strategy Session \nQuiz: Timed 6 problems + solution writing."
+                          }
+                        </li>
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__djbWy
+                          )}
+                        >
+                          {
+                            "Guest Lecture + Wrap-Up + Next Steps (AMC, AIME prep)\n\n\n"
+                          }
+                        </li>
+                      </ol>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
                 </div>
               </div>
             </div>
           </section>
           <section
-            data-plasmic-name={"work"}
-            data-plasmic-override={overrides.work}
-            className={classNames(projectcss.all, sty.work)}
+            data-plasmic-name={"meetings"}
+            data-plasmic-override={overrides.meetings}
+            className={classNames(projectcss.all, sty.meetings)}
             id={"work"}
           >
             <div className={classNames(projectcss.all, sty.freeBox___5A2Ma)}>
@@ -450,7 +1040,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
                 id={"services"}
               >
-                {"work"}
+                {"MEETINGS"}
               </div>
               <h2
                 className={classNames(
@@ -460,7 +1050,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2___3Cfcf
                 )}
               >
-                {"Privileged to work with on some amazing projects."}
+                {"Weekly meeting notes"}
               </h2>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__nwnU1)}>
@@ -477,35 +1067,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.projectCard__tvcPb
                       )}
-                      link={`/project-relaunch`}
-                      title={"Project Relaunch"}
-                    />
-                  </Reveal>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__ipTW)}>
-                  <Reveal
-                    className={classNames("__wab_instance", sty.reveal__flDft)}
-                    delay={250}
-                    direction={"up"}
-                    duration={500}
-                    triggerOnce={true}
-                  >
-                    <ProjectCard
-                      className={classNames(
-                        "__wab_instance",
-                        sty.projectCard__ep64
-                      )}
                       description={
-                        "Aut cupiditate expedita dolor eveniet a autem rerum ut dicta. Exercitationem eum suscipit quo. Est fugiat ducimus aut saepe."
+                        "Introduction to Problem Solving Strategies (Pigeonhole, Working Backwards, Invariants) \nQuiz: Basic puzzle-style questions."
                       }
-                      image={{
-                        src: "/plasmic/beginners_guide_website_in_3_minutes/images/abstractBackgroundJpg.jpg",
-                        fullWidth: 1920,
-                        fullHeight: 1171,
-                        aspectRatio: undefined
-                      }}
-                      link={`/website-redesign`}
-                      title={"Website Redesign"}
+                      link={`/project-relaunch`}
+                      title={"Week 1 "}
                     />
                   </Reveal>
                 </div>
@@ -525,7 +1091,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.projectCard__nurHr
                       )}
                       description={
-                        "Aut cupiditate expedita dolor eveniet a autem rerum ut dicta. Exercitationem eum suscipit quo. Est fugiat ducimus aut saepe."
+                        "Arithmetic & Number Sense Tricks Quiz: Modular arithmetic with small mods"
                       }
                       image={{
                         src: "/plasmic/beginners_guide_website_in_3_minutes/images/abstractBackgroundWithSoftGradientColorAndDynamicShadowOnBackgroundBackgroundForWallpaperEps10FreeVectorJpg.jpg",
@@ -534,14 +1100,16 @@ function PlasmicHomepage__RenderFunc(props: {
                         aspectRatio: undefined
                       }}
                       link={`/premium-sass-design`}
-                      title={"Premium Saas Design"}
+                      title={"Week 2 "}
                     />
                   </Reveal>
                 </div>
-                <div className={classNames(projectcss.all, sty.column__l9RTn)}>
+              </div>
+              <div className={classNames(projectcss.all, sty.columns__byDdg)}>
+                <div className={classNames(projectcss.all, sty.column__vnjK)}>
                   <Reveal
-                    className={classNames("__wab_instance", sty.reveal___8ZnZa)}
-                    delay={750}
+                    className={classNames("__wab_instance", sty.reveal__g9YFg)}
+                    delay={500}
                     direction={"up"}
                     duration={500}
                     triggerOnce={true}
@@ -549,19 +1117,19 @@ function PlasmicHomepage__RenderFunc(props: {
                     <ProjectCard
                       className={classNames(
                         "__wab_instance",
-                        sty.projectCard___1EtcJ
+                        sty.projectCard__j3Eux
                       )}
                       description={
-                        "Aut cupiditate expedita dolor eveniet a autem rerum ut dicta. Exercitationem eum suscipit quo. Est fugiat ducimus aut saepe."
+                        "Algebra I \u2013 Expressions & Equations Quiz: Simplify, solve linear equations, word problems."
                       }
                       image={{
-                        src: "/plasmic/beginners_guide_website_in_3_minutes/images/blueAndOrangeAbstractBackgroundFreeVectorJpg.jpg",
+                        src: "/plasmic/beginners_guide_website_in_3_minutes/images/abstractBackgroundWithSoftGradientColorAndDynamicShadowOnBackgroundBackgroundForWallpaperEps10FreeVectorJpg.jpg",
                         fullWidth: 1920,
-                        fullHeight: 1280,
+                        fullHeight: 1080,
                         aspectRatio: undefined
                       }}
-                      link={`/web-visual-design`}
-                      title={"Web Visual Graphic Design"}
+                      link={`/premium-sass-design`}
+                      title={"Week 3 "}
                     />
                   </Reveal>
                 </div>
@@ -583,7 +1151,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
                 id={"about"}
               >
-                {"About Me"}
+                {"CONTACT"}
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__tminf)}>
@@ -595,7 +1163,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.h2__vt4FV
                 )}
               >
-                {"Bridging design and no-code."}
+                {"Ready to join us? "}
               </h2>
               <div
                 className={classNames(
@@ -605,7 +1173,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "Anna is an award winning, web designer specialising in no-code solutions. With over 8 years of professional experience I've helped countless startups launch & grow their business."
+                  "Please send us a note at lthsmathclub@gmail.com or show up at one of our sessions."
                 }
               </div>
             </div>
@@ -721,461 +1289,6 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
             </div>
           </section>
-          <section
-            data-plasmic-name={"testimonials"}
-            data-plasmic-override={overrides.testimonials}
-            className={classNames(projectcss.all, sty.testimonials)}
-          >
-            <div className={classNames(projectcss.all, sty.freeBox___12IGo)}>
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__saCfg
-                )}
-              >
-                {"TESTIMONIALS"}
-              </div>
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__isNg3
-                )}
-              >
-                {"Hear from the folks I've worked with."}
-              </h2>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__w4N5W)}>
-              <div className={classNames(projectcss.all, sty.freeBox__cpWi9)}>
-                <div className={classNames(projectcss.all, sty.freeBox__uwjcr)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__lvPzq)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.freeBox___1L66D
-                      )}
-                    >
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__eAisC)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg___8EfJp)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__rkqbv)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__rWjGr)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg___3OXi)}
-                        role={"img"}
-                      />
-                    </div>
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__vsPtq
-                      )}
-                    >
-                      {"Very experienced"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___81S4Z
-                      )}
-                    >
-                      {
-                        '"Anna worked very closely with us, delivering such a well designed product. Great communication and quick turn around. Loved it!"'
-                      }
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.columns__lj1O)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__wpU8Q
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__rBli)}
-                          displayHeight={"100px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/beginners_guide_website_in_3_minutes/images/alexSuprunZHvM3XioHoEUnsplashJpg.jpg",
-                            fullWidth: 640,
-                            fullHeight: 640,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__tMzLk
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__fr424
-                          )}
-                        >
-                          {"Albert David"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__bzuFw
-                          )}
-                        >
-                          {"Marketing Manager, Company"}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__rg198)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__j4Owq)}
-                    >
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__gMqo)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg___9H51)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__n7Vm8)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__xGmxf)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__eQrfI)}
-                        role={"img"}
-                      />
-                    </div>
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3___2Q9Pw
-                      )}
-                    >
-                      {"Very fast & skillful"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___8VMpU
-                      )}
-                    >
-                      {
-                        '"Anna worked very closely with us, delivering such a well designed product. Great communication and quick turn around. Loved it!"'
-                      }
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.columns__lQtsK)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__if3Cy
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__rrwXz)}
-                          displayHeight={"100px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/beginners_guide_website_in_3_minutes/images/christopherCampbellRDeoVtE7VOsUnsplashJpg.jpg",
-                            fullWidth: 640,
-                            fullHeight: 427,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__y7Hzj
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__gGg2B
-                          )}
-                        >
-                          {"Arolina"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___2WlwO
-                          )}
-                        >
-                          {"Manager, Company"}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox___6RmrZ)}>
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___8Qoel)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__uOt4O)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__mmrze)}
-                    >
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__nmHfe)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg___8B6XV)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg___4GsiW)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg___6WUN)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__sstak)}
-                        role={"img"}
-                      />
-                    </div>
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__pxRe7
-                      )}
-                    >
-                      {"skilled communicator"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__tWHdX
-                      )}
-                    >
-                      {
-                        '"Anna worked very closely with us, delivering such a well designed product. Great communication and quick turn around. Loved it!"'
-                      }
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.columns__hima1)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__iiNlQ
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__lOfAj)}
-                          displayHeight={"100px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/beginners_guide_website_in_3_minutes/images/courtneyCookTsZo17R3M0SUnsplashJpg.jpg",
-                            fullWidth: 640,
-                            fullHeight: 960,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(projectcss.all, sty.column__yzq8)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__bPlez
-                          )}
-                        >
-                          {"Firmona"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__j4RHj
-                          )}
-                        >
-                          {"Founder, Company"}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={classNames(projectcss.all, sty.freeBox__kcA)}>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__xgXY)}
-                    >
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__pJrGj)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__fzVl9)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__xhSk7)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__uoK0O)}
-                        role={"img"}
-                      />
-
-                      <StarIcon
-                        className={classNames(projectcss.all, sty.svg__ygNnt)}
-                        role={"img"}
-                      />
-                    </div>
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.__wab_text,
-                        sty.h3__vmoEk
-                      )}
-                    >
-                      {"Great design skills"}
-                    </h3>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__yi03G
-                      )}
-                    >
-                      {
-                        '"Anna worked very closely with us, delivering such a well designed product. Great communication and quick turn around. Loved it!"'
-                      }
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.columns__uWo83)}
-                    >
-                      <div
-                        className={classNames(projectcss.all, sty.column__akvZ)}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__kwP5W)}
-                          displayHeight={"100px"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100px"}
-                          loading={"lazy"}
-                          src={{
-                            src: "/plasmic/beginners_guide_website_in_3_minutes/images/alexanderHippIEebWgY6LAUnsplashJpg.jpg",
-                            fullWidth: 640,
-                            fullHeight: 640,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-                      <div
-                        className={classNames(projectcss.all, sty.column__oLoP)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__cAzNd
-                          )}
-                        >
-                          {"Motherson"}
-                        </div>
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__n5Ko6
-                          )}
-                        >
-                          {"Design Lead, Company"}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
           <ContactSection
             data-plasmic-name={"contactSection"}
             data-plasmic-override={overrides.contactSection}
@@ -1197,26 +1310,24 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navigationBar",
-    "intro",
+    "introduction",
     "mainTextContainer",
     "h1",
+    "curriculum",
     "link",
-    "services",
-    "work",
+    "meetings",
     "about",
-    "testimonials",
     "contactSection",
     "footer"
   ],
   navigationBar: ["navigationBar"],
-  intro: ["intro", "mainTextContainer", "h1", "link"],
+  introduction: ["introduction", "mainTextContainer", "h1"],
   mainTextContainer: ["mainTextContainer", "h1"],
   h1: ["h1"],
+  curriculum: ["curriculum", "link"],
   link: ["link"],
-  services: ["services"],
-  work: ["work"],
+  meetings: ["meetings"],
   about: ["about"],
-  testimonials: ["testimonials"],
   contactSection: ["contactSection"],
   footer: ["footer"]
 } as const;
@@ -1226,14 +1337,13 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   navigationBar: typeof NavigationBar;
-  intro: "section";
+  introduction: "section";
   mainTextContainer: "div";
   h1: "h1";
+  curriculum: "section";
   link: "a";
-  services: "section";
-  work: "section";
+  meetings: "section";
   about: "section";
-  testimonials: "section";
   contactSection: typeof ContactSection;
   footer: typeof Footer;
 };
@@ -1299,14 +1409,13 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
-    intro: makeNodeComponent("intro"),
+    introduction: makeNodeComponent("introduction"),
     mainTextContainer: makeNodeComponent("mainTextContainer"),
     h1: makeNodeComponent("h1"),
+    curriculum: makeNodeComponent("curriculum"),
     link: makeNodeComponent("link"),
-    services: makeNodeComponent("services"),
-    work: makeNodeComponent("work"),
+    meetings: makeNodeComponent("meetings"),
     about: makeNodeComponent("about"),
-    testimonials: makeNodeComponent("testimonials"),
     contactSection: makeNodeComponent("contactSection"),
     footer: makeNodeComponent("footer"),
 

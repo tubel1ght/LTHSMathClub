@@ -163,7 +163,7 @@ function PlasmicContactSection__RenderFunc(props: {
         >
           {hasVariant(globalVariants, "screen", "mobileOnly")
             ? "Ready to get your business out \nthere?"
-            : "Ready to work together?"}
+            : "Ready to join us?"}
         </h2>
         <div className={classNames(projectcss.all, sty.freeBox__ucEps)}>
           <PlasmicLink__
@@ -179,9 +179,18 @@ function PlasmicContactSection__RenderFunc(props: {
             href={"https://www.plasmic.app/"}
             platform={"nextjs"}
           >
-            {hasVariant(globalVariants, "screen", "mobileOnly")
-              ? "let\u2019s make something special"
-              : "I'd love to hear from you"}
+            {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+              "let\u2019s make something special"
+            ) : (
+              <React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ color: "var(--token-24higxTT5khm)" }}
+                >
+                  {"We'd love to hear from you"}
+                </span>
+              </React.Fragment>
+            )}
           </PlasmicLink__>
           <RightArrowIcon
             data-plasmic-name={"svg"}

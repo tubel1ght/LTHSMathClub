@@ -11,6 +11,16 @@
       }
     },
     {
+      "name": "Maroon",
+      "type": "color",
+      "value": "#B10735",
+      "category": "color",
+      "meta": {
+        "projectId": "g859oFSV3DRmGwpuroRhgj",
+        "id": "24higxTT5khm"
+      }
+    },
+    {
       "name": "Pink",
       "type": "color",
       "value": "#D1387C",
