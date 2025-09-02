@@ -90,7 +90,6 @@ export type PlasmicHomepage__OverridesType = {
   mainTextContainer?: Flex__<"div">;
   h1?: Flex__<"h1">;
   curriculum?: Flex__<"section">;
-  link?: Flex__<"a"> & Partial<LinkProps>;
   meetings?: Flex__<"section">;
   contactSection?: Flex__<typeof ContactSection>;
   footer?: Flex__<typeof Footer>;
@@ -447,28 +446,6 @@ function PlasmicHomepage__RenderFunc(props: {
             id={"Services"}
           >
             <div className={classNames(projectcss.all, sty.freeBox__a5Ds7)}>
-              <PlasmicLink__
-                data-plasmic-name={"link"}
-                data-plasmic-override={overrides.link}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link
-                )}
-                component={Link}
-                id={"services"}
-                platform={"nextjs"}
-              >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ color: "var(--token-24higxTT5khm)" }}
-                  >
-                    {"CURRICULUM"}
-                  </span>
-                </React.Fragment>
-              </PlasmicLink__>
               <h2
                 className={classNames(
                   projectcss.all,
@@ -1159,7 +1136,6 @@ const PlasmicDescendants = {
     "mainTextContainer",
     "h1",
     "curriculum",
-    "link",
     "meetings",
     "contactSection",
     "footer"
@@ -1168,8 +1144,7 @@ const PlasmicDescendants = {
   introduction: ["introduction", "mainTextContainer", "h1"],
   mainTextContainer: ["mainTextContainer", "h1"],
   h1: ["h1"],
-  curriculum: ["curriculum", "link"],
-  link: ["link"],
+  curriculum: ["curriculum"],
   meetings: ["meetings"],
   contactSection: ["contactSection"],
   footer: ["footer"]
@@ -1184,7 +1159,6 @@ type NodeDefaultElementType = {
   mainTextContainer: "div";
   h1: "h1";
   curriculum: "section";
-  link: "a";
   meetings: "section";
   contactSection: typeof ContactSection;
   footer: typeof Footer;
@@ -1255,7 +1229,6 @@ export const PlasmicHomepage = Object.assign(
     mainTextContainer: makeNodeComponent("mainTextContainer"),
     h1: makeNodeComponent("h1"),
     curriculum: makeNodeComponent("curriculum"),
-    link: makeNodeComponent("link"),
     meetings: makeNodeComponent("meetings"),
     contactSection: makeNodeComponent("contactSection"),
     footer: makeNodeComponent("footer"),
