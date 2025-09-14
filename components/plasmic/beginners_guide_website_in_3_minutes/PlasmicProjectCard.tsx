@@ -152,6 +152,7 @@ function PlasmicProjectCard__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const globalVariants = _useGlobalVariants();
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (

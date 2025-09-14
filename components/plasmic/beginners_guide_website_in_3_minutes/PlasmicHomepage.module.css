@@ -246,20 +246,6 @@
   min-width: 0;
   padding: 8px;
 }
-.link {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  align-self: flex-start;
-  font-size: 20px;
-  font-weight: 700;
-  padding-bottom: 16px;
-  transform: none;
-  text-transform: uppercase;
-  color: var(--token-9BpcOQY3byxb);
-  min-width: 0;
-}
 .h2__jPDix {
   position: relative;
   width: 100%;
