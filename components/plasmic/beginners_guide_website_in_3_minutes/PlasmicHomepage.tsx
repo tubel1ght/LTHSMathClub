@@ -238,7 +238,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.h2___1J52C
                         )}
                       >
-                        {"Let's enjoy math, together!"}
+                        {"Let's explore math, together!"}
                       </h2>
                     }
                     <React.Fragment>{""}</React.Fragment>
